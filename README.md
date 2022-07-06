@@ -1,0 +1,2 @@
+# PYTHON
+This directory is for tracking python learnings via progressing through [Andrei Nagoie's Zero To Mastery Udemy Python course](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)

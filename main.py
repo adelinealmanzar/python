@@ -1,6 +1,9 @@
 # exercise
-birth_year = input('what year were you born?')
+username = input('username, please:')
+password = input('What\'s your password?')
 
-age = 2022 - int(birth_year)
+password_len = len(password)
 
-print(f'your age is {age}')
+secret = '*' * password_len
+
+print(f'{username}, your password {secret} is {password_len} letters long')

@@ -1,13 +1,10 @@
 # exercise
-is_magician = True
-is_expert = False
 
-#check if magicion AND expert: "you are a master magician"
-if is_magician and is_expert:
-    print("you are a master magician")
-#check if magician but not expert: "at least you're getting there"
-elif is_magician and not(is_expert):
-    print("at least you're getting there")
-#if you're not a magician: "you need magical powers"
-elif not(is_magician):
-    print("you need magical powers")
+#build counter to return sum total of list
+my_list = [1,2,3,4,5,6,7,8,9]
+
+sum = 0
+
+for num in my_list:
+    sum += num
+print(sum)

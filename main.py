@@ -1,9 +1,4 @@
 # exercise
-username = input('username, please:')
-password = input('What\'s your password?')
+my_list = [1,2,3,4,5,5]
 
-password_len = len(password)
-
-secret = '*' * password_len
-
-print(f'{username}, your password {secret} is {password_len} letters long')
+print(set(my_list))

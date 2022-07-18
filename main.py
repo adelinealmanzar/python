@@ -1,15 +1,10 @@
 # exercise
 
-age = input("What is your age?: ")
-def checkDriverAge(age=0):
+def highest_even(li):
+    max = 0
+    for num in li:
+        if num % 2 == 0 and num > max:
+            max = num
+    return max
 
-
-    if int(age) < 18:
-        print("Sorry, you are too young to drive this car. Powering off")
-    elif int(age) > 18:
-        print("Powering On. Enjoy the ride!");
-    elif int(age) == 18:
-        print("Congratulations on your first year of driving. Enjoy the ride!")
-
-checkDriverAge(age)
-# checkDriverAge()
+print(highest_even([10,2,3,4,5,8,11]))

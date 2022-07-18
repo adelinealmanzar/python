@@ -1,10 +1,10 @@
 # exercise
 
 def highest_even(li):
-    max = 0
+    evens = []
     for num in li:
-        if num % 2 == 0 and num > max:
-            max = num
-    return max
+        if num % 2 == 0:
+            evens.append(num)
+    return max(evens)
 
 print(highest_even([10,2,3,4,5,8,11]))

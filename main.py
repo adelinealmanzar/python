@@ -1,13 +1,15 @@
 # exercise
 
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+age = input("What is your age?: ")
+def checkDriverAge(age=0):
 
-duplicates = []
 
+    if int(age) < 18:
+        print("Sorry, you are too young to drive this car. Powering off")
+    elif int(age) > 18:
+        print("Powering On. Enjoy the ride!");
+    elif int(age) == 18:
+        print("Congratulations on your first year of driving. Enjoy the ride!")
 
-for value in some_list:
-    if some_list.count(value) > 1:
-        if value not in duplicates:
-            duplicates.append(value)
-
-print(duplicates)
+checkDriverAge(age)
+# checkDriverAge()

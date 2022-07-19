@@ -15,12 +15,9 @@ cat3 = Cat('Garfield', 9)
 
 
 # 2 Create a function that finds the oldest cat
-def oldest_cat(*args):
-    ages = []
-    for cat in args:
-        ages.append(cat.age)
-    return max(ages)
+def oldest_cat(*cat_ages):
+    return max(cat_ages)
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
-oldest_age = oldest_cat(cat1,cat2,cat3)
+oldest_age = oldest_cat(cat1.age,cat2.age,cat3.age)
 print(f"The oldest cat is {oldest_age} years old.")

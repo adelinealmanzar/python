@@ -1,12 +1,9 @@
 # exercise
 
-class User():
-    def __init__(self, name):
-        self.name = name
+class SuperList(list):
+    def __len__(self):
+        return 1000
 
-class Wizard(User):
-    def __init__(self, name):
-        super().__init__(name)
+super_list1 = SuperList()
 
-wizard = Wizard('me')
-print(wizard.name)
+print(super_list1)

@@ -11,8 +11,8 @@ print(list(map(capitalize_item, my_pets)))
 #2 Zip the 2 lists into a list of tuples, but sort the numbers from lowest to highest.
 my_strings = ['a', 'b', 'c', 'd', 'e']
 my_numbers = [5,4,3,2,1]
-my_numbers.sort()
-print(list(zip(my_strings, my_numbers)))
+# my_numbers.sort()
+print(list(zip(my_strings, sorted(my_numbers))))
 
 
 #3 Filter the scores that pass over 50%
@@ -26,4 +26,4 @@ print(list(filter(over_50, scores)))
 combined_nums = my_numbers + scores
 def accumulator(acc, item):
     return acc + item
-print(reduce(accumulator, combined_nums, 1))
+print(reduce(accumulator, combined_nums))

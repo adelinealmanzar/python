@@ -1,15 +1,18 @@
-from functools import reduce
+from time import time
 # exercise
 
-#return duplicates in list using a comprehension
-some_list = ['a','b','c','b','d','m','n','n']
+def performance(fn):
+    def wrapper(*args, **kwargs):
+        t1 = time()
+        result = fn(*args, **kwargs)
+        t2 = time()
+        print(f'took {t2-t1} ms')
+        return result
+    return wrapper
 
-duplicates = []
-for value in some_list:
-    if some_list.count(value) > 1:
-        if value not in duplicates:
-            duplicates.append(value)
+@performance
+def long_time():
+    for i in range(100):
+        i*5
 
-
-comp_duplicates = list(set([el for el in some_list if some_list.count(el) > 1]))
-print(comp_duplicates)
+long_time()

@@ -1,20 +1,8 @@
-from time import time
 # exercise
 
-# Create an @authenticated decorator that only allows the function to run if user1 has 'valid' set to True:
-user1 = {
-    'name': 'Sorna',
-    'valid': True #changing this will either run or not run the message_friends function.
-}
-
-def authenticated(fn):
-    def wrapper(*args, **kwargs):
-        if args[0]['valid'] == True:
-            return fn(*args, **kwargs)
-    return wrapper
-
-@authenticated
-def message_friends(user):
-    print('message has been sent')
-
-message_friends(user1)
+#error handling
+try:
+    age = int(input('what is your age'))
+    print(age)
+except:
+    print('please enter a number')

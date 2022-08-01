@@ -1,9 +1,6 @@
 # exercise
 
 #fibonacci
-from curses import A_ALTCHARSET
-
-
 def fib(num):
     a = 0
     b = 1

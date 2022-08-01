@@ -5,7 +5,7 @@ def div_by_7_not_5(num1, num2):
     result = []
     for i in range(num1, num2 + 1):
         if i % 7 == 0 and i % 5 != 0:
-            result.append(i)
-    return result
+            result.append(str(i))
+    return ','.join(result)
 
 print(div_by_7_not_5(2000,3200))

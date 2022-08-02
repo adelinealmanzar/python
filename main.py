@@ -1,15 +1,18 @@
 # exercise
 
-# Define a class which has at least two methods: 1. getString and 2.printString
+# Write a program that calculates and prints the value according to the given formula:
+# Q = Square root of [(2 _ C _ D)/H]
+# Following are the fixed values of C and H:
+# C is 50. H is 30.
+# D is the variable whose values should be input to your program in a comma-separated sequence.For example Let us assume the following comma separated input sequence is given to the program:
 
-class InputOutString():
-    def __init__(self):
-        self.s = ""
-    def getString(self):
-        self.s = input()
-    def printString(self):
-        print(self.s.upper())
+from math import sqrt
 
-ioString = InputOutString()
-ioString.getString()
-ioString.printString()
+C,H = 50,30
+
+def calc(D):
+    return sqrt((2*C*D)/H)
+
+D = input().split(',')
+D = [str(round(calc(int(i)))) for i in D]
+print(",".join(D))

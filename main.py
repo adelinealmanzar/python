@@ -1,8 +1,18 @@
 # exercise
 
-# Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.The numbers obtained should be printed in a comma-separated sequence on a single line.result = []
-result = []
-for num in range(1000, 3001):
-    if num % 2 == 0:
-        result.append(str(num))
-print(','.join(result))
+# Write a program that accepts a sentence and calculate the number of letters and digitsresult = []
+text = input('Letters and Digiits plaase:')
+
+letters = 0
+digits = 0
+for char in text:
+    print(digits, letters)
+    if char.isdigit():
+        print('here')
+        # if it's a digit
+        digits += 1
+    elif char.isalpha():
+        #if it's a letter
+        letters += 1
+
+print(f'DIGITS {digits}\nLETTERS {letters}')  

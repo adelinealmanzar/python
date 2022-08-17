@@ -1,7 +1,7 @@
 # exercise
 
 # Write a program that accepts a sentence and calculate the number of letters and digitsresult = []
-text = input('Letters and Digiits plaase:')
+text = input('Letters and Digits please:')
 
 letters = 0
 digits = 0

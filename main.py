@@ -9,7 +9,7 @@ lowercase = 0
 for char in text:
     if char.isupper():
         uppercase += 1
-    elif char.isalpha():
+    elif char.islower():
         lowercase += 1
         
 

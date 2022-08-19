@@ -7,7 +7,7 @@ input_num = input('Provide a number please:')
 
 sum = 0
 temp = input_num
-for x in range(4):
+for x in range(int(input_num)):
     sum += int(temp)
     temp += input_num
 

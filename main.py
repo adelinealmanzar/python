@@ -1,16 +1,14 @@
 # exercise
 
-# Write a program that accepts a sentence and calculate the number of letters and digitsresult = []
-text = input('Sentence please:')
+# Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of atext = input('Sentence please:')
 
-uppercase = 0
-lowercase = 0
 
-for char in text:
-    if char.isupper():
-        uppercase += 1
-    elif char.islower():
-        lowercase += 1
-        
+input_num = input('Provide a number please:')
 
-print(f'UPPER CASE {uppercase}\nLOWER CASE {lowercase}')
+sum = 0
+temp = input_num
+for x in range(4):
+    sum += int(temp)
+    temp += input_num
+
+print(sum)

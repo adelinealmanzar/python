@@ -1,14 +1,8 @@
 # exercise
 
-# Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of atext = input('Sentence please:')
+# Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers. >Suppose the following input is supplied to the program:
+# newlist = [x for x in fruits if "a" in x]
 
-
-input_num = input('Provide a number please:')
-
-sum = 0
-temp = input_num
-for x in range(int(input_num)):
-    sum += int(temp)
-    temp += input_num
-
-print(sum)
+nums = input('Numbers, please:').split(',')
+squared_odd_nums = [int(num) ** 2 for num in nums if int(num) % 2 == 1]
+print(squared_odd_nums)

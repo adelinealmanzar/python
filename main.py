@@ -1,42 +1,12 @@
 # exercise
 
-# A website requires the users to input username and password to register. Write a program to check the validity of password input by users.
-passwords = input('Passwords:').split(",")
+# You are required to write a program to sort the (name, age, score) tuples by ascending order where name is string, age and score are numbers. The tuples are input by console. 
+lst = []
 
-def is_in_char_limit(word):
-    if len(word) > 6 and len(word) < 12:
-        return True
-    return False
+while True:
+    s = input('Names, Ages, and Scores:').split(',')
+    if not s[0]:
+        break
+    lst.append(tuple(s))
 
-def is_lowercase(word):
-    for l in word:
-        if l.islower() == True:
-            return True
-    return False
-
-def is_uppercase(word):
-    for l in word:
-        if l.isupper() == True:
-            return True
-    return False
-
-def is_number(word):
-    for l in word:
-        if l.isnumeric() == True:
-            return True
-    return False
-
-def is_special(word):
-    for l in word:
-        if l == '@' or l == '#' or l == '$':
-            return True
-    return False
-
-def check_passwords(passwords):
-    result = []
-    for password in passwords:
-        if is_in_char_limit(password) and is_lowercase(password) and is_uppercase(password) and is_number(password) and is_special(password):
-            result.append(password)
-    return result
-
-print(check_passwords(passwords))
+print(lst.sort(key= lambda x: (x[0], int(x[1]), int(x[2]))))

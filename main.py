@@ -1,12 +1,14 @@
 # exercise
 
-# You are required to write a program to sort the (name, age, score) tuples by ascending order where name is string, age and score are numbers. The tuples are input by console. 
-lst = []
+# Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n
+from tkinter import N
 
-while True:
-    s = input('Names, Ages, and Scores:').split(',')
-    if not s[0]:
-        break
-    lst.append(tuple(s))
 
-print(lst.sort(key= lambda x: (x[0], int(x[1]), int(x[2]))))
+class Divisible():
+    def by_7(self, n):
+        for num in range(0, n + 1):
+            if num % 7 == 0:
+                yield num
+
+for i in Divisible().by_7( int(input('Please enter a number:'))):
+    print(i)

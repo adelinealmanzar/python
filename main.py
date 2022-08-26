@@ -1,9 +1,13 @@
 # exercise
 
-# Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions
-print('----------')
-print("abs:", abs.__doc__)
-print('----------')
-print("int:", int.__doc__)
-print('----------')
-print("sorted:", sorted.__doc__)
+# Define a class, which have a class parameter and have a same instance parameter.
+class Animal():
+    animal_type = 'Animal'
+
+    def __init__(self, animal_type = None):
+        self.animal_type = animal_type
+
+a = Animal('Dog')
+print(a.animal_type) #=> 'Dog'
+print(Animal.animal_type) #=> 'Animal'
+print(Animal().animal_type) #=> None

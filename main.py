@@ -1,6 +1,8 @@
 # exercise
 
-# Define a function which can compute the sum of two numbers.
+# Define a function that can convert a integer into a string and print it in console
 
-sum = lambda n1, n2: n1 + n2
-print(sum(10,5))
+def int_to_str(num):
+    print(str(num))
+
+int_to_str(10)

@@ -1,7 +1,15 @@
 # exercise
 
-# Define a function that can accept two strings as input and concatenate them and then print it in console
+# Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print all strings line by line
 
-concat_str = lambda s1, s2: s1 + s2
+def max_len(s1, s2):
+    if len(s1) > len(s2):
+        print(s1)
+    elif len(s1) < len(s2):
+        print(s2)
+    else:
+        print(s1)
+        print(s2)
 
-print(concat_str('hello', 'world'))
+
+max_len('hellos', 'hello')

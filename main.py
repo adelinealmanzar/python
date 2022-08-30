@@ -1,8 +1,9 @@
 # exercise
 
-# Define a function that can convert a integer into a string and print it in console
+# Define a function that can receive two integer numbers in string form and compute their sum and then print it in console
 
-def int_to_str(num):
-    print(str(num))
+def strs_sum(s1, s2):
+    sum = int(s1) + int(s2)
+    print(sum)
 
-int_to_str(10)
+strs_sum('10', '12')
